@@ -1,0 +1,23 @@
+#include <iostream>
+
+int * find(int target, int b) {
+    for (int i = -target; i <= target; ++i) {
+        for (int j = -target; j <= target; j++) {
+            if (i * j == target && i + j == b) {
+                static int ans[2] = {i, j};
+                return ans;
+            }
+        }
+    }
+}
+
+int main() {
+    int a, b, c;
+    std::cin >> a >> b >> c;
+    int target = a * c;
+    int * ans = find(target, b);
+    for (int i = 0; i < 2; ++i) {
+        std::cout << ans[i] << std::endl;
+    }
+    return 0;
+}
