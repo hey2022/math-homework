@@ -1,0 +1,3 @@
+C:/Users/heyih/CLionProjects/math-homework/cmake-build-debug/CMakeFiles/math_homework.dir
+C:/Users/heyih/CLionProjects/math-homework/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/heyih/CLionProjects/math-homework/cmake-build-debug/CMakeFiles/rebuild_cache.dir
