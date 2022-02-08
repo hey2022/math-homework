@@ -20,6 +20,7 @@ void print_ans(int * ans, int gcf) {
 }
 
 int GCF (int a, int b, int c) {
+    a = abs(a), b = abs(b), c = abs(c);
     int max;
     max = std::max(a, std::max(b, c));
     for(int i = max; i >= 1; --i) {
