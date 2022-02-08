@@ -1,6 +1,6 @@
 #include <iostream>
 
-int * find(int a, int b, int c, int range) {
+int * factor(int a, int b, int c, int range) {
     for (int i = range; i >= -range; --i) {
         for (int j = range; j >= -range; --j) {
             for (int k = range; k >= -range; --k) {
@@ -38,7 +38,7 @@ int main() {
     std::cin >> a >> b >> c;
     int gcf = GCF(a, b, c);
     a /= gcf, b /= gcf, c /= gcf;
-    int * ans = find(a, b, c, range);
+    int * ans = factor(a, b, c, range);
     print_ans(ans, gcf);
     return 0;
 }
