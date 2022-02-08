@@ -2,23 +2,27 @@
 #include <cmath>
 
 int * find(int a, int b, int c, int range) {
-    for (int i = -range; i <= range; ++i) {
-        for (int j = -range; j <= range; j++) {
-            if (i * j == c && a * j + i == b) {
-                static int ans[2] = {i, j};
-                return ans;
+    for (int i = range; i >= -range; --i) {
+        for (int j = range; j >= -range; --j) {
+            for (int k = range; k >= -range; --k) {
+                for (int l = range; l >= -range; --l) {
+                    if (i * k == a && j * l == c && i * l + j * k == b) {
+                        static int ans[4] = {i, j, k, l};
+                        return ans;
+                    }
+                }
             }
         }
     }
 }
 
 void print_ans(int * ans, int a) {
-    std::cout <<"(" << a << std::showpos << "x" << ans[0] << ")(x" << ans[1] << ")" << std::endl;
+    std::cout <<"(" << ans[0] << "x" << std::showpos << ans[1] << ")" << "(" << std::noshowpos << ans[2] << "x" << std::showpos << ans[3] << ")" << std::endl;
 }
 
 
 int main() {
-    int a, b, c, range = 1000;
+    int a, b, c, range = 50;
     std::cin >> a >> b >> c;
     int * ans = find(a, b, c, range);
     print_ans(ans, a);
