@@ -1,1 +1,1 @@
-# math-homework
+# math-homework solving code
