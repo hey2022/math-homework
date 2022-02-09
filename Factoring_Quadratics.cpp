@@ -22,7 +22,7 @@ void print_ans(int * ans, int gcf) {
 int GCF (int a, int b, int c) {
     a = abs(a), b = abs(b), c = abs(c);
     int min;
-    max = std::min(a, std::min(b, c));
+    min = std::min(a, std::min(b, c));
     for(int i = min; i >= 1; --i) {
         if((a % i == 0 ) and (b % i == 0 ) and (c % i == 0 )) {
             return i;
