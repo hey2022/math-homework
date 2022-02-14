@@ -2,9 +2,20 @@
 
 void output(float answer[], int degree, float devisor) {
     for (int i = 0; i < degree; ++i) {
-        std::cout << std::showpos << answer[i] << "x^" << std::noshowpos <<degree - 1 - i; 
+        int var_degree = degree - 1 - i;
+        if (answer[i] != 0) {
+            if (var_degree == 0) {
+                std::cout << std::showpos << answer[i]; 
+            } else if (var_degree == 1) {
+                std::cout << std::showpos << answer[i] << "x"; 
+            } else {
+                std::cout << std::showpos << answer[i] << "x^" << std::noshowpos << var_degree; 
+            }
+        }
     }
-    std::cout << std::showpos << "+\\frac{" << answer[degree] << "}{x" << devisor << "}" << std::endl;
+    if (answer[degree] != 0) {
+        std::cout << std::noshowpos << "+\\frac{" << answer[degree] << "}{x" << std::showpos << devisor << "}" << std::endl;
+    }
  }
 
 void synthetic_division(float coefficient[], float devisor, int degree) {
