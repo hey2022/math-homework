@@ -1,6 +1,6 @@
 #include <iostream>
 
-void output(float answer[], int degree, float devisor) {
+void output(int degree, float answer[], float divisor) {
     for (int i = 0; i < degree; ++i) {
         int var_degree = degree - 1 - i;
         if (answer[i] != 0) {
@@ -14,27 +14,27 @@ void output(float answer[], int degree, float devisor) {
         }
     }
     if (answer[degree] != 0) {
-        std::cout << std::noshowpos << "+\\frac{" << answer[degree] << "}{x" << std::showpos << devisor << "}" << std::endl;
+        std::cout << std::noshowpos <<"+\\frac{" << answer[degree] << "}{x" << std::showpos << divisor << "}" << std::endl;
     }
- }
+}
 
-void synthetic_division(float coefficient[], float devisor, int degree) {
-    float devisor_0 = -devisor, answer[degree + 1], temp = 0;
+void synthetic_division(int degree, float coefficient[], float divisor) {
+    float divisor_0 = -divisor, answer[degree + 1], temp = 0;
     for (int i = 0; i <= degree; ++i) {
         answer[i] = coefficient[i] + temp;
-        temp = devisor_0 * answer[i];
+        temp = divisor_0 * answer[i];
     }
-    output(answer, degree, devisor);
+    output(degree, answer, divisor);
 }
 
 int main() {
     int degree;
     std::cin >> degree;
-    float coefficient[degree + 1], devisor;
+    float coefficient[degree + 1], divisor;
     for (int i = 0; i <= degree; ++i) {
         std::cin >> coefficient[i];
     }
-    std::cin >> devisor;
-    synthetic_division(coefficient, devisor, degree);
+    std::cin >> divisor;
+    synthetic_division(degree, coefficient, divisor);
     return 0;
 }
