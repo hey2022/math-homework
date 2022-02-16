@@ -14,7 +14,7 @@ void output(int degree, float answer[], float divisor) {
         }
     }
     if (answer[degree] != 0) {
-        std::cout << std::noshowpos <<"+\\frac{" << answer[degree] << "}{x" << std::showpos << divisor << "}" << std::endl;
+        std::cout << std::noshowpos << "+\\frac{" << answer[degree] << "}{x" << std::showpos << divisor << "}" << std::endl;
     }
 }
 
