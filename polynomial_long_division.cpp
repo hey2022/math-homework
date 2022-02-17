@@ -22,7 +22,9 @@ void polynomial_long_division(int degree, float coefficient[], int divisor_degre
     float answer[degree - divisor_degree + 2];
     for (int i = 0; i <= degree; ++i) {
         answer[i] = coefficient[i] / divisor[0];
-        
+        for (int j = 1; j <= divisor_degree; ++j) {
+            coefficient[degree - j] -= divisor[j] * answer[i];
+        }
     }
 }
 
