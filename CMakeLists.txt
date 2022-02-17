@@ -3,4 +3,4 @@ project(math_homework)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(math_homework Factoring_Quadratics.cpp)
+add_executable(math_homework polynomial_long_division.cpp)

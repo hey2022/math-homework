@@ -1,16 +1,2 @@
 # ninja log v5
-3	1241	6660470495026950	CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.obj	1c52f3116225526d
-946	1158	6660490794242105	math_homework.exe	dd3963b6e64a81da
-0	944	6660490792188333	CMakeFiles/math_homework.dir/euclid's_algorithm.cpp.obj	de96dcae6f6dd31
-1	733	6660494652516630	CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.obj	1c52f3116225526d
-737	1074	6660494655550507	math_homework.exe	7af8b99902d6ecb7
-8	739	6660501345621210	CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.obj	1c52f3116225526d
-741	984	6660501347990728	math_homework.exe	7af8b99902d6ecb7
-4	540	6660501593111248	CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.obj	1c52f3116225526d
-543	752	6660501595281474	math_homework.exe	7af8b99902d6ecb7
-4	475	6660504411084295	CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.obj	1c52f3116225526d
-476	1087	6660504416171964	math_homework.exe	7af8b99902d6ecb7
-5	656	6660507060911685	CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.obj	1c52f3116225526d
-658	833	6660507062654404	math_homework.exe	7af8b99902d6ecb7
-7	811	6660509623562189	CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.obj	1c52f3116225526d
 814	1049	6660509625827610	math_homework.exe	7af8b99902d6ecb7

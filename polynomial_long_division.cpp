@@ -18,12 +18,10 @@ void output(int degree, float answer[], float divisor) {
     }
 }
 
-void polynomial_long_division(int degree, float coefficient[], float divisor[]) {
-    float answer[degree + 1];
-    answer[0] = (coefficient[i] / divisor[0]);
-    for (int i = 1; i <= degree; ++i) {
-        coefficient[i] = 
-        answer[i] = (coefficient[i] / divisor[0]);
+void polynomial_long_division(int degree, float coefficient[], int divisor_degree, float divisor[]) {
+    float answer[degree - divisor_degree + 2];
+    for (int i = 0; i <= degree; ++i) {
+        answer[i] = coefficient[i] / divisor[0];
         
     }
 }
@@ -31,14 +29,15 @@ void polynomial_long_division(int degree, float coefficient[], float divisor[]) 
 int main() {
     int degree, divisor_degree;
     std::cin >> degree;
-    float coefficient[degree + 1], divisor[3];
+    float coefficient[degree + 1];
     for (int i = 0; i <= degree; ++i) {
         std::cin >> coefficient[i];
     }
-    sstd::cin >> divisor_degree;
+    std::cin >> divisor_degree;
+    float divisor[divisor_degree + 1];
     for (int i = 0; i < divisor_degree; ++i) {
         std::cin >> divisor[i];
     }
-    polynomial_long_division(degree, coefficient, divisor);
+    polynomial_long_division(degree, coefficient, divisor_degree, divisor);
     return 0;
 }
