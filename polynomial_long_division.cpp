@@ -1,31 +1,32 @@
 #include <iostream>
 
-void output(int degree, float answer[], float divisor) {
-    for (int i = 0; i < degree; ++i) {
-        int var_degree = degree - 1 - i;
-        if (answer[i] != 0) {
+void output(int degree, float quotient[], int divisor_degree, float divisor[]) {
+    for (int i = 0; i <= degree - divisor_degree; ++i) {
+        int var_degree = degree - divisor_degree - i;
+        if (quotient[i] != 0) {
             if (var_degree == 0) {
-                std::cout << std::showpos << answer[i]; 
+                std::cout << std::showpos << quotient[i];
             } else if (var_degree == 1) {
-                std::cout << std::showpos << answer[i] << "x"; 
+                std::cout << std::showpos << quotient[i] << "x";
             } else {
-                std::cout << std::showpos << answer[i] << "x^" << std::noshowpos << var_degree; 
+                std::cout << std::showpos << quotient[i] << "x^" << std::noshowpos << var_degree;
             }
         }
     }
-    if (answer[degree] != 0) {
-        std::cout << std::noshowpos <<"+\\frac{" << answer[degree] << "}{x" << std::showpos << divisor << "}" << std::endl;
+    if (quotient[degree] != 0) {
+        std::cout << std::noshowpos << "+\\frac{" << quotient[degree] << "}{x" << std::showpos << divisor << "}" << std::endl;
     }
 }
 
 void polynomial_long_division(int degree, float coefficient[], int divisor_degree, float divisor[]) {
-    float answer[degree - divisor_degree + 2];
-    for (int i = 0; i <= degree; ++i) {
-        answer[i] = coefficient[i] / divisor[0];
-        for (int j = 1; j <= divisor_degree; ++j) {
-            coefficient[degree - j] -= divisor[j] * answer[i];
+    float quotient[degree - divisor_degree + 1];
+    for (int i = 0; i <= degree - divisor_degree; ++i) {
+        quotient[i] = coefficient[i] / divisor[0];
+        for (int j = 0; j <= divisor_degree; ++j) {
+            coefficient[i + j] -= divisor[j] * quotient[i];
         }
     }
+    output(degree, quotient, divisor_degree, divisor);
 }
 
 int main() {
