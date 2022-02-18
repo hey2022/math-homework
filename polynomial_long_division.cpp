@@ -43,12 +43,16 @@ void polynomial_long_division(int degree, float dividend[], int divisor_degree, 
 
 void input() {
     int degree, divisor_degree;
+    std::cout << "Degree of polynomial:";
     std::cin >> degree;
+    std::cout << "Coefficients of polynomial including 0:";
     float dividend[degree + 1];
     for (int i = 0; i <= degree; ++i) {
         std::cin >> dividend[i];
     }
+    std::cout << "Degree of polynomial divisor:";
     std::cin >> divisor_degree;
+    std::cout << "Coefficients of polynomial divisor including 0:";
     float divisor[divisor_degree + 1];
     for (int i = 0; i < divisor_degree; ++i) {
         std::cin >> divisor[i];

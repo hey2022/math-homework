@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-long double  quadratic_formula(int a, int b, int c) {\
+long double  quadratic_formula(int a, int b, int c) {
     long double delta = pow(b, 2) - 4 * a * c;
     if (delta < 0) {
         return nullptr;
