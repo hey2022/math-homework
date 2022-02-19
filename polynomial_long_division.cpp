@@ -1,6 +1,6 @@
 #include <iostream>
 
-void print(int degree, int index, float array[]) {
+void print(int degree, int index, const float * array) {
     if (array[index] != 0) {
         if (degree == 0) {
             std::cout << std::showpos << array[index];
@@ -12,7 +12,7 @@ void print(int degree, int index, float array[]) {
     }
 }
 
-void output(int degree, float quotient[], int divisor_degree, float divisor[], float dividend[]) {
+void output(int degree, float * quotient, int divisor_degree, const float * divisor, float * dividend) {
     for (int i = 0; i <= degree - divisor_degree; ++i) {
         int var_degree = degree - divisor_degree - i;
         print(var_degree, i, quotient);
@@ -30,7 +30,7 @@ void output(int degree, float quotient[], int divisor_degree, float divisor[], f
     std::cout << "}" << std::endl;
 }
 
-void polynomial_long_division(int degree, float dividend[], int divisor_degree, float divisor[]) {
+void polynomial_long_division(int degree, float * dividend, int divisor_degree, const float * divisor) {
     float quotient[degree - divisor_degree + 1];
     for (int i = 0; i <= degree - divisor_degree; ++i) {
         quotient[i] = dividend[i] / divisor[0];
@@ -41,7 +41,8 @@ void polynomial_long_division(int degree, float dividend[], int divisor_degree, 
     output(degree, quotient, divisor_degree, divisor, dividend);
 }
 
-void input() {
+float ** input() {
+    static float * input[4];
     int degree, divisor_degree;
     std::cout << "Degree of polynomial:";
     std::cin >> degree;
@@ -57,10 +58,16 @@ void input() {
     for (int i = 0; i < divisor_degree; ++i) {
         std::cin >> divisor[i];
     }
-    polynomial_long_division(degree, dividend, divisor_degree, divisor);
+    auto f_degree = float (degree), f_divisor_degree = float (divisor_degree);
+    input[0] = &f_degree;
+    input[1] = dividend;
+    input[2] = &f_divisor_degree;
+    input[3] = divisor;
+    return input;
 }
 
 int main() {
-    input();
+    float ** user_input = input();
+    polynomial_long_division(int (* user_input[0]), user_input[1], int (* user_input[2]), user_input[3]);
     return 0;
 }
