@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Doge/CLionProjects/math-homework/Factoring_Quadratics.cpp">
+		<Unit filename="C:/Users/Doge/CLionProjects/math-homework/polynomial_long_division.cpp">
 			<Option target="math_homework"/>
 		</Unit>
 		<Unit filename="C:/Users/Doge/CLionProjects/math-homework/CMakeLists.txt">

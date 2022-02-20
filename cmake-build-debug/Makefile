@@ -128,29 +128,29 @@ math_homework/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/build
 .PHONY : math_homework/fast
 
-Factoring_Quadratics.obj: Factoring_Quadratics.cpp.obj
-.PHONY : Factoring_Quadratics.obj
+polynomial_long_division.obj: polynomial_long_division.cpp.obj
+.PHONY : polynomial_long_division.obj
 
 # target to build an object file
-Factoring_Quadratics.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.obj
-.PHONY : Factoring_Quadratics.cpp.obj
+polynomial_long_division.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/polynomial_long_division.cpp.obj
+.PHONY : polynomial_long_division.cpp.obj
 
-Factoring_Quadratics.i: Factoring_Quadratics.cpp.i
-.PHONY : Factoring_Quadratics.i
+polynomial_long_division.i: polynomial_long_division.cpp.i
+.PHONY : polynomial_long_division.i
 
 # target to preprocess a source file
-Factoring_Quadratics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.i
-.PHONY : Factoring_Quadratics.cpp.i
+polynomial_long_division.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/polynomial_long_division.cpp.i
+.PHONY : polynomial_long_division.cpp.i
 
-Factoring_Quadratics.s: Factoring_Quadratics.cpp.s
-.PHONY : Factoring_Quadratics.s
+polynomial_long_division.s: polynomial_long_division.cpp.s
+.PHONY : polynomial_long_division.s
 
 # target to generate assembly for a file
-Factoring_Quadratics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/Factoring_Quadratics.cpp.s
-.PHONY : Factoring_Quadratics.cpp.s
+polynomial_long_division.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/polynomial_long_division.cpp.s
+.PHONY : polynomial_long_division.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... math_homework
-	@echo ... Factoring_Quadratics.obj
-	@echo ... Factoring_Quadratics.i
-	@echo ... Factoring_Quadratics.s
+	@echo ... polynomial_long_division.obj
+	@echo ... polynomial_long_division.i
+	@echo ... polynomial_long_division.s
 .PHONY : help
 
 
