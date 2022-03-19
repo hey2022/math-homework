@@ -68,28 +68,28 @@ include CMakeFiles/math_homework.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/math_homework.dir/flags.make
 
-CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj: CMakeFiles/math_homework.dir/flags.make
-CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj: ../quadratic_formula.cpp
-CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj: CMakeFiles/math_homework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DELL\CLionProjects\math-homework\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj -MF CMakeFiles\math_homework.dir\quadratic_formula.cpp.obj.d -o CMakeFiles\math_homework.dir\quadratic_formula.cpp.obj -c C:\Users\DELL\CLionProjects\math-homework\quadratic_formula.cpp
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj: CMakeFiles/math_homework.dir/flags.make
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj: ../simplify_radicals.cpp
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj: CMakeFiles/math_homework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\DELL\CLionProjects\math-homework\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj -MF CMakeFiles\math_homework.dir\simplify_radicals.cpp.obj.d -o CMakeFiles\math_homework.dir\simplify_radicals.cpp.obj -c C:\Users\DELL\CLionProjects\math-homework\simplify_radicals.cpp
 
-CMakeFiles/math_homework.dir/quadratic_formula.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/math_homework.dir/quadratic_formula.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\DELL\CLionProjects\math-homework\quadratic_formula.cpp > CMakeFiles\math_homework.dir\quadratic_formula.cpp.i
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/math_homework.dir/simplify_radicals.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\DELL\CLionProjects\math-homework\simplify_radicals.cpp > CMakeFiles\math_homework.dir\simplify_radicals.cpp.i
 
-CMakeFiles/math_homework.dir/quadratic_formula.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/math_homework.dir/quadratic_formula.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DELL\CLionProjects\math-homework\quadratic_formula.cpp -o CMakeFiles\math_homework.dir\quadratic_formula.cpp.s
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/math_homework.dir/simplify_radicals.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DELL\CLionProjects\math-homework\simplify_radicals.cpp -o CMakeFiles\math_homework.dir\simplify_radicals.cpp.s
 
 # Object files for target math_homework
 math_homework_OBJECTS = \
-"CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj"
+"CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj"
 
 # External object files for target math_homework
 math_homework_EXTERNAL_OBJECTS =
 
-math_homework.exe: CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj
+math_homework.exe: CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj
 math_homework.exe: CMakeFiles/math_homework.dir/build.make
 math_homework.exe: CMakeFiles/math_homework.dir/linklibs.rsp
 math_homework.exe: CMakeFiles/math_homework.dir/objects1.rsp

@@ -128,29 +128,29 @@ math_homework/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/build
 .PHONY : math_homework/fast
 
-quadratic_formula.obj: quadratic_formula.cpp.obj
-.PHONY : quadratic_formula.obj
+simplify_radicals.obj: simplify_radicals.cpp.obj
+.PHONY : simplify_radicals.obj
 
 # target to build an object file
-quadratic_formula.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj
-.PHONY : quadratic_formula.cpp.obj
+simplify_radicals.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj
+.PHONY : simplify_radicals.cpp.obj
 
-quadratic_formula.i: quadratic_formula.cpp.i
-.PHONY : quadratic_formula.i
+simplify_radicals.i: simplify_radicals.cpp.i
+.PHONY : simplify_radicals.i
 
 # target to preprocess a source file
-quadratic_formula.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/quadratic_formula.cpp.i
-.PHONY : quadratic_formula.cpp.i
+simplify_radicals.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/simplify_radicals.cpp.i
+.PHONY : simplify_radicals.cpp.i
 
-quadratic_formula.s: quadratic_formula.cpp.s
-.PHONY : quadratic_formula.s
+simplify_radicals.s: simplify_radicals.cpp.s
+.PHONY : simplify_radicals.s
 
 # target to generate assembly for a file
-quadratic_formula.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/quadratic_formula.cpp.s
-.PHONY : quadratic_formula.cpp.s
+simplify_radicals.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/simplify_radicals.cpp.s
+.PHONY : simplify_radicals.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... math_homework
-	@echo ... quadratic_formula.obj
-	@echo ... quadratic_formula.i
-	@echo ... quadratic_formula.s
+	@echo ... simplify_radicals.obj
+	@echo ... simplify_radicals.i
+	@echo ... simplify_radicals.s
 .PHONY : help
 
 

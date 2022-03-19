@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/DELL/CLionProjects/math-homework/quadratic_formula.cpp">
+		<Unit filename="C:/Users/DELL/CLionProjects/math-homework/simplify_radicals.cpp">
 			<Option target="math_homework"/>
 		</Unit>
 		<Unit filename="C:/Users/DELL/CLionProjects/math-homework/CMakeLists.txt">

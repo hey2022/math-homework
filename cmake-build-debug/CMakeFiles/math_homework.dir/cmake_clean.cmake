@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj"
-  "CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj.d"
+  "CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj"
+  "CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj.d"
   "libmath_homework.dll.a"
   "math_homework.exe"
   "math_homework.exe.manifest"
