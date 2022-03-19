@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Doge\CLionProjects\math-homework
+CMAKE_SOURCE_DIR = C:\Users\DELL\CLionProjects\math-homework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Doge\CLionProjects\math-homework\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\DELL\CLionProjects\math-homework\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Doge\CLionProjects\math-homework\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Doge\CLionProjects\math-homework\cmake-build-debug\CMakeFiles C:\Users\Doge\CLionProjects\math-homework\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\DELL\CLionProjects\math-homework\cmake-build-debug\CMakeFiles C:\Users\DELL\CLionProjects\math-homework\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Doge\CLionProjects\math-homework\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\DELL\CLionProjects\math-homework\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,29 +128,29 @@ math_homework/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/build
 .PHONY : math_homework/fast
 
-polynomial_long_division.obj: polynomial_long_division.cpp.obj
-.PHONY : polynomial_long_division.obj
+quadratic_formula.obj: quadratic_formula.cpp.obj
+.PHONY : quadratic_formula.obj
 
 # target to build an object file
-polynomial_long_division.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/polynomial_long_division.cpp.obj
-.PHONY : polynomial_long_division.cpp.obj
+quadratic_formula.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj
+.PHONY : quadratic_formula.cpp.obj
 
-polynomial_long_division.i: polynomial_long_division.cpp.i
-.PHONY : polynomial_long_division.i
+quadratic_formula.i: quadratic_formula.cpp.i
+.PHONY : quadratic_formula.i
 
 # target to preprocess a source file
-polynomial_long_division.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/polynomial_long_division.cpp.i
-.PHONY : polynomial_long_division.cpp.i
+quadratic_formula.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/quadratic_formula.cpp.i
+.PHONY : quadratic_formula.cpp.i
 
-polynomial_long_division.s: polynomial_long_division.cpp.s
-.PHONY : polynomial_long_division.s
+quadratic_formula.s: quadratic_formula.cpp.s
+.PHONY : quadratic_formula.s
 
 # target to generate assembly for a file
-polynomial_long_division.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/polynomial_long_division.cpp.s
-.PHONY : polynomial_long_division.cpp.s
+quadratic_formula.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math_homework.dir\build.make CMakeFiles/math_homework.dir/quadratic_formula.cpp.s
+.PHONY : quadratic_formula.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... math_homework
-	@echo ... polynomial_long_division.obj
-	@echo ... polynomial_long_division.i
-	@echo ... polynomial_long_division.s
+	@echo ... quadratic_formula.obj
+	@echo ... quadratic_formula.i
+	@echo ... quadratic_formula.s
 .PHONY : help
 
 

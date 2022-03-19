@@ -1,3 +1,3 @@
-C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\math_homework.dir/objects.a
-C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\mingw\bin\ar.exe qc CMakeFiles\math_homework.dir/objects.a @CMakeFiles\math_homework.dir\objects1.rsp
-C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\mingw\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\math_homework.dir/objects.a -Wl,--no-whole-archive -o math_homework.exe -Wl,--out-implib,libmath_homework.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\math_homework.dir\linklibs.rsp
+"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\math_homework.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\math_homework.dir/objects.a @CMakeFiles\math_homework.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\math_homework.dir/objects.a -Wl,--no-whole-archive -o math_homework.exe -Wl,--out-implib,libmath_homework.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\math_homework.dir\linklibs.rsp

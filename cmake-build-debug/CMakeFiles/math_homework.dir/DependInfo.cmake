@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Doge/CLionProjects/math-homework/polynomial_long_division.cpp" "CMakeFiles/math_homework.dir/polynomial_long_division.cpp.obj" "gcc" "CMakeFiles/math_homework.dir/polynomial_long_division.cpp.obj.d"
+  "C:/Users/DELL/CLionProjects/math-homework/quadratic_formula.cpp" "CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj" "gcc" "CMakeFiles/math_homework.dir/quadratic_formula.cpp.obj.d"
   )
 
 # Targets to which this target links.

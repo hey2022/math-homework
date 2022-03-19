@@ -1,9 +1,9 @@
 #include <iostream>
 #include <cmath>
 
-std::string root(int radicand);
+std::string root(int radicand, int a, int b);
 std::string quadratic_formula(int a, int b, int c);
-std::string format(int coefficient, int radicand, int a, int b, int c);
+std::string format(int coefficient, int radicand, int a, int b);
 int HCF(int a, int b, int c);
 std::string test_b(int b);
 std::string test_radicand(int radicand);
@@ -15,7 +15,7 @@ int main() {
     return 0;
 }
 
-std::string format(int coefficient, int radicand, int a, int b, int c) {
+std::string format(int coefficient, int radicand, int a, int b) {
     int hcf = HCF(-b, coefficient, 2 * a);
     if (2 * a / hcf == 1) {
         return test_b(-b / hcf) + "\\pm" + std::to_string(coefficient / hcf) + test_radicand(radicand);
@@ -24,21 +24,21 @@ std::string format(int coefficient, int radicand, int a, int b, int c) {
     }
     
 }
-std::string root(int radicand, int a, int b, int c) {
+std::string root(int radicand, int a, int b) {
     int coefficient = 1, index = 2, d = 2;
     while (std::pow(d, index) <= radicand) {
         if (radicand % int(std::pow(d, index)) == 0) {
-            radicand /= std::pow(d, index);
+            radicand /= int(std::pow(d, index));
             coefficient *= d;
         } else {
             ++d;
         }
     }
-    return format(coefficient, radicand, a, b, c);
+    return format(coefficient, radicand, a, b);
 }
 
 std::string quadratic_formula(int a, int b, int c) {
-    int radicand = pow(b, 2) - 4 * a * c;
+    int radicand = int(pow(b, 2) - 4 * a * c);
     if (radicand < 0) {
         return "No roots";
     } else if (radicand == 0 && -b % (2 * a) == 0) {
@@ -47,7 +47,7 @@ std::string quadratic_formula(int a, int b, int c) {
         int hcf = HCF(-b, 0, 2 * a);
         return "\\frac{" + std::to_string(-b / hcf) + "}" + "{" + std::to_string(2 * a / hcf) + "}";
     } else {
-        return root(radicand, a, b, c);
+        return root(radicand, a, b);
     }
 }
 
