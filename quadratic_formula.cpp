@@ -24,6 +24,7 @@ std::string format(int coefficient, int radicand, int a, int b) {
     }
     
 }
+
 std::string root(int radicand, int a, int b) {
     int coefficient = 1, index = 2, d = 2;
     while (std::pow(d, index) <= radicand) {
