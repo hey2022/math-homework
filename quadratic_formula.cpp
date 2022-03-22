@@ -22,7 +22,6 @@ std::string format(int coefficient, int radicand, int a, int b) {
     } else {
         return "\\frac{" + test_b(-b / hcf) + "\\pm" + std::to_string(coefficient / hcf) + test_radicand(radicand) + "}{" + std::to_string(2 * a / hcf) + "}";
     }
-    
 }
 
 std::string root(int radicand, int a, int b) {
