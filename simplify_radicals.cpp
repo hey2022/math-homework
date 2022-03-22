@@ -62,5 +62,4 @@ std::string check_root(int index, int radicand, int radicand_x_exponent) {
     } else {
         return "\\sqrt[" + std::to_string(index) + "]{" + check_number(radicand) + check_x_exponent(radicand_x_exponent) + "}";
     }
-    std::max(1, 2);
 }
