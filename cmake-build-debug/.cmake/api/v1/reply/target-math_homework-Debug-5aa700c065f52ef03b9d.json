@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "math_homework.exe"
-		},
-		{
-			"path" : "math_homework.pdb"
+			"path" : "math_homework"
 		}
 	],
 	"backtrace" : 1,
@@ -38,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15"
 				},
 				{
 					"fragment" : "-std=gnu++14"
@@ -71,16 +68,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "math_homework",
-	"nameOnDisk" : "math_homework.exe",
+	"nameOnDisk" : "math_homework",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Factoring_Quadratics.cpp",
+			"path" : "factoring_quadratics.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
