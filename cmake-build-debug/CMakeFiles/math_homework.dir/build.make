@@ -69,28 +69,28 @@ include CMakeFiles/math_homework.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/math_homework.dir/flags.make
 
-CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o: CMakeFiles/math_homework.dir/flags.make
-CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o: ../factoring_quadratics.cpp
-CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o: CMakeFiles/math_homework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/y09/CLionProjects/math-homework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o -MF CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o.d -o CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o -c /Users/y09/CLionProjects/math-homework/factoring_quadratics.cpp
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.o: CMakeFiles/math_homework.dir/flags.make
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.o: ../simplify_radicals.cpp
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.o: CMakeFiles/math_homework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/y09/CLionProjects/math-homework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/math_homework.dir/simplify_radicals.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/math_homework.dir/simplify_radicals.cpp.o -MF CMakeFiles/math_homework.dir/simplify_radicals.cpp.o.d -o CMakeFiles/math_homework.dir/simplify_radicals.cpp.o -c /Users/y09/CLionProjects/math-homework/simplify_radicals.cpp
 
-CMakeFiles/math_homework.dir/factoring_quadratics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/math_homework.dir/factoring_quadratics.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/y09/CLionProjects/math-homework/factoring_quadratics.cpp > CMakeFiles/math_homework.dir/factoring_quadratics.cpp.i
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/math_homework.dir/simplify_radicals.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/y09/CLionProjects/math-homework/simplify_radicals.cpp > CMakeFiles/math_homework.dir/simplify_radicals.cpp.i
 
-CMakeFiles/math_homework.dir/factoring_quadratics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/math_homework.dir/factoring_quadratics.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/y09/CLionProjects/math-homework/factoring_quadratics.cpp -o CMakeFiles/math_homework.dir/factoring_quadratics.cpp.s
+CMakeFiles/math_homework.dir/simplify_radicals.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/math_homework.dir/simplify_radicals.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/y09/CLionProjects/math-homework/simplify_radicals.cpp -o CMakeFiles/math_homework.dir/simplify_radicals.cpp.s
 
 # Object files for target math_homework
 math_homework_OBJECTS = \
-"CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o"
+"CMakeFiles/math_homework.dir/simplify_radicals.cpp.o"
 
 # External object files for target math_homework
 math_homework_EXTERNAL_OBJECTS =
 
-math_homework: CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o
+math_homework: CMakeFiles/math_homework.dir/simplify_radicals.cpp.o
 math_homework: CMakeFiles/math_homework.dir/build.make
 math_homework: CMakeFiles/math_homework.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/y09/CLionProjects/math-homework/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable math_homework"

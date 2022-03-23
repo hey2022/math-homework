@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/y09/CLionProjects/math-homework/factoring_quadratics.cpp">
+		<Unit filename="/Users/y09/CLionProjects/math-homework/simplify_radicals.cpp">
 			<Option target="math_homework"/>
 		</Unit>
 		<Unit filename="/Users/y09/CLionProjects/math-homework/CMakeLists.txt">

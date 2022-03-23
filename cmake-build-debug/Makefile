@@ -129,29 +129,29 @@ math_homework/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_homework.dir/build.make CMakeFiles/math_homework.dir/build
 .PHONY : math_homework/fast
 
-factoring_quadratics.o: factoring_quadratics.cpp.o
-.PHONY : factoring_quadratics.o
+simplify_radicals.o: simplify_radicals.cpp.o
+.PHONY : simplify_radicals.o
 
 # target to build an object file
-factoring_quadratics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_homework.dir/build.make CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o
-.PHONY : factoring_quadratics.cpp.o
+simplify_radicals.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_homework.dir/build.make CMakeFiles/math_homework.dir/simplify_radicals.cpp.o
+.PHONY : simplify_radicals.cpp.o
 
-factoring_quadratics.i: factoring_quadratics.cpp.i
-.PHONY : factoring_quadratics.i
+simplify_radicals.i: simplify_radicals.cpp.i
+.PHONY : simplify_radicals.i
 
 # target to preprocess a source file
-factoring_quadratics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_homework.dir/build.make CMakeFiles/math_homework.dir/factoring_quadratics.cpp.i
-.PHONY : factoring_quadratics.cpp.i
+simplify_radicals.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_homework.dir/build.make CMakeFiles/math_homework.dir/simplify_radicals.cpp.i
+.PHONY : simplify_radicals.cpp.i
 
-factoring_quadratics.s: factoring_quadratics.cpp.s
-.PHONY : factoring_quadratics.s
+simplify_radicals.s: simplify_radicals.cpp.s
+.PHONY : simplify_radicals.s
 
 # target to generate assembly for a file
-factoring_quadratics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_homework.dir/build.make CMakeFiles/math_homework.dir/factoring_quadratics.cpp.s
-.PHONY : factoring_quadratics.cpp.s
+simplify_radicals.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_homework.dir/build.make CMakeFiles/math_homework.dir/simplify_radicals.cpp.s
+.PHONY : simplify_radicals.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... math_homework"
-	@echo "... factoring_quadratics.o"
-	@echo "... factoring_quadratics.i"
-	@echo "... factoring_quadratics.s"
+	@echo "... simplify_radicals.o"
+	@echo "... simplify_radicals.i"
+	@echo "... simplify_radicals.s"
 .PHONY : help
 
 

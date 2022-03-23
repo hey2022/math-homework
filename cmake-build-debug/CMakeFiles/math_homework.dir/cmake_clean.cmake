@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o"
-  "CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o.d"
+  "CMakeFiles/math_homework.dir/simplify_radicals.cpp.o"
+  "CMakeFiles/math_homework.dir/simplify_radicals.cpp.o.d"
   "math_homework"
   "math_homework.pdb"
 )

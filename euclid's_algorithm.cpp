@@ -14,8 +14,7 @@ int HCF(int num1, int num2) {
 
 int main() {
     int num1, num2;
-    std::cout << "Find the greatest common factor of:";
     std::cin >> num1 >> num2;
-    std::cout << "The greatest common factor is "<< HCF(num1, num2) << std::endl;
+    std::cout << HCF(num1, num2);
     return 0;
 }
