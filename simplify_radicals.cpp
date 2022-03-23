@@ -24,16 +24,7 @@ std::string root(int coefficient, int index, int radicand, int exponent_x) {
             ++d;
         }
     }
-    return format(coefficient, index, radicand, exponent_x / index, exponent_x % index);
-}
-
-std::string format(int coefficient, int index, int radicand, int coefficient_x_exponent, int radicand_x_exponent) {
-//    if (radicand == 1) {
-//        return std::to_string(coefficient);
-//    } else if (){
-//        return std::to_string(coefficient) + "\\sqrt{" + std::to_string(radicand) + "}";
-//    }
-    return check_number(coefficient) + check_x_exponent(coefficient_x_exponent) + check_root(index, radicand, radicand_x_exponent);
+    return check_number(coefficient) + check_x_exponent(exponent_x / index) + check_root(index, radicand, exponent_x % index);
 }
 
 std::string check_x_exponent(int x_exponent) {
