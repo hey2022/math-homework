@@ -1,41 +1,16 @@
 #include <iostream>
 #include <cmath>
 
-std::string root(int radicand, int a, int b);
 std::string factor_quadratic(int a, int b, int c);
-std::string format(int coefficient, int radicand, int a, int b);
-int HCF(int a, int b, int c);
-std::string test_b(int b);
-std::string test_radicand(int radicand);
 std::string flip_sign(int number);
+std::string check_number(int number);
+int HCF(int num1, int num2);
 
 int main() {
     int a, b, c;
     std::cin >> a >> b >> c;
     std::cout << factor_quadratic(a, b, c);
     return 0;
-}
-
-std::string format(int coefficient, int radicand, int a, int b) {
-    int hcf = HCF(-b, coefficient, 2 * a);
-    if (2 * a / hcf == 1) {
-        return test_b(-b / hcf) + "\\pm" + std::to_string(coefficient / hcf) + test_radicand(radicand);
-    } else {
-        return "\\frac{" + test_b(-b / hcf) + "\\pm" + std::to_string(coefficient / hcf) + test_radicand(radicand) + "}{" + std::to_string(2 * a / hcf) + "}";
-    }
-}
-
-std::string root(int radicand, int a, int b) {
-    int coefficient = 1, index = 2, d = 2;
-    while (std::pow(d, index) <= radicand) {
-        if (radicand % int(std::pow(d, index)) == 0) {
-            radicand /= int(std::pow(d, index));
-            coefficient *= d;
-        } else {
-            ++d;
-        }
-    }
-    return format(coefficient, radicand, a, b);
 }
 
 std::string factor_quadratic(int a, int b, int c) {
@@ -45,43 +20,29 @@ std::string factor_quadratic(int a, int b, int c) {
     } else if (sqrt(radicand) != int(sqrt(radicand))) {
         return "Is Prime";
     } else {
-        return std::to_string(a) + "(x" + flip_sign(-b+ sqrt(radicand)) + ")(x" + flip_sign() + ")";
-    }
-    } else if (radicand == 0 && -b % (2 * a) == 0) {
-        return std::to_string(-b / 2 / a);
-    } else if (radicand == 0) {
-        int hcf = HCF(-b, 0, 2 * a);
-        return "\\frac{" + std::to_string(-b / hcf) + "}" + "{" + std::to_string(2 * a / hcf) + "}";
-    } else {
-        return root(radicand, a, b);
+        int hcf1 = HCF(-b + int(sqrt(radicand)), 2 * a);
+        int hcf2 = HCF(-b - int(sqrt(radicand)), 2 * a);
+        return "(" + check_number((2 * a) / hcf1) + "x" + flip_sign((-b + int(sqrt(radicand))) / hcf1) + ")(" + check_number((2 * a) / hcf2) + "x" + flip_sign((-b - int(sqrt(radicand))) / hcf2) + ")";
     }
 }
 
-int HCF(int a, int b, int c) {
-    a = abs(a), b = abs(b), c = abs(c);
-    int min;
-    min = std::min(a, std::min(b, c));
-    for(int i = min; i >= 1; --i) {
-        if((a % i == 0) and (b % i == 0) and (c % i == 0)) {
-            return i;
+int HCF(int num1, int num2) {
+    num1 = abs(num1), num2 = abs(num2);
+    int remainder;
+    while (true) {
+        remainder = num1 % num2;
+        if (remainder == 0) {
+            return num2;
         }
-    }
-    return 0;
-}
-
-std::string test_b(int b) {
-    if (b == 0) {
-        return "";
-    } else {
-        return std::to_string(b);
+        num1 = num2, num2 = remainder;
     }
 }
 
-std::string test_radicand(int radicand) {
-    if ( radicand == 1) {
+std::string check_number(int number) {
+    if (number == 1) {
         return "";
     } else {
-        return "\\sqrt{" + std::to_string(radicand) + "}";
+        return std::to_string(number);
     }
 }
 
@@ -92,7 +53,3 @@ std::string flip_sign(int number) {
         return "+" + std::to_string(abs(number));
     }
 }
-
-// void print_ans(int * ans, int gcf) {
-//     std::cout << gcf <<"(" << ans[0] << "x" << std::showpos << ans[1] << ")" << "(" << std::noshowpos << ans[2] << "x" << std::showpos << ans[3] << ")" << std::endl;
-// }
