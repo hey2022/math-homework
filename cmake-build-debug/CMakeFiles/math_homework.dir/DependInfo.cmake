@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/DELL/CLionProjects/math-homework/simplify_radicals.cpp" "CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj" "gcc" "CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj.d"
+  "/Users/y09/CLionProjects/math-homework/factoring_quadratics.cpp" "CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o" "gcc" "CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o.d"
   )
 
 # Targets to which this target links.

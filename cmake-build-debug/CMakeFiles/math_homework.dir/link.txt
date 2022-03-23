@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\math_homework.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\math_homework.dir/objects.a @CMakeFiles\math_homework.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\math_homework.dir/objects.a -Wl,--no-whole-archive -o math_homework.exe -Wl,--out-implib,libmath_homework.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\math_homework.dir\linklibs.rsp
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o -o math_homework 

@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj"
-  "CMakeFiles/math_homework.dir/simplify_radicals.cpp.obj.d"
-  "libmath_homework.dll.a"
-  "math_homework.exe"
-  "math_homework.exe.manifest"
+  "CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o"
+  "CMakeFiles/math_homework.dir/factoring_quadratics.cpp.o.d"
+  "math_homework"
   "math_homework.pdb"
 )
 

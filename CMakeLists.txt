@@ -3,4 +3,4 @@ project(math_homework)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(math_homework simplify_radicals.cpp)
+add_executable(math_homework factoring_quadratics.cpp)
