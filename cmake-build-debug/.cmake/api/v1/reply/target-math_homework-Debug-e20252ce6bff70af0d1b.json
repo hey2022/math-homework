@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "math_homework"
+			"path" : "math_homework.exe"
+		},
+		{
+			"path" : "math_homework.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15"
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++14"
@@ -68,12 +71,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "math_homework",
-	"nameOnDisk" : "math_homework",
+	"nameOnDisk" : "math_homework.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -94,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "simplify_radicals.cpp",
+			"path" : "multiplying_radicals.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
