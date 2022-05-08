@@ -1,4 +1,4 @@
-C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Doge\CLionProjects\math-homework
+C:\Users\Doge\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\221.5080.224\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Doge\CLionProjects\math-homework -B C:\Users\Doge\CLionProjects\math-homework\cmake-build-debug
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/Doge/CLionProjects/math-homework/cmake-build-debug
